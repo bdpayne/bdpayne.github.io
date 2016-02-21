@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Bryan D. Payne</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background-color: #333;
+		}
+		p {
+			color: #333;
+			font-family: Helvetica;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 22px;
+			-webkit-font-smoothing: antialiased;
+		}
+		a {
+			color: #fff;
+			font-weight: bold;
+			text-decoration: none;
+			border-bottom: 1px solid
+			rgba(255,255,255,0.3);
+		}
+		a:hover {
+			color: #990000;
+			border-bottom: 1px solid
+			rgba(255,255,255,1);
+		}
+		#monogram {
+			width: 50px;
+			margin: 0;
+			position: fixed;
+			right: 50px;
+			top: 50px;
+			opacity:0.4;
+		}
+		#about {
+			width: 400px;
+			margin: 0 auto 0 50px !important;
+			position: relative;
+			z-index: 100;
+			padding: 20px 20px 1px 20px;
+			background: rgb(34,34,34); /* for IE */
+			background: rgba(34,34,34,0.75);
+			border-radius: 25px;
+		}
+		#about p {
+				color: #fefefe;
+				font-family: Helvetica;
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 12px;
+				-webkit-font-smoothing: antialiased;
+		}
+		p#title {
+			color: #fefefe;
+			font-family: Helvetica;
+			font-size: 22px;
+			line-height: 20px;
+			margin-bottom: 0px;
+			font-weight: bold;
+			-webkit-font-smoothing: antialiased;
+		}
+		p#subtitle {
+			color: #fefefe;
+			font-family: Helvetica;
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 12px;
+			font-style: italic;
+			-webkit-font-smoothing: antialiased;
+		}
+		ul#connect {
+			white-space:nowrap;
+			width: 400px;
+			padding: 20px;
+			margin: 0 auto 0 50px !important;
+			text-align: center;
+		}
+		#connect li {
+			display:inline;
+			list-style-type:none;
+		}
+		#connect a {
+			text-decoration: none;
+			padding:3px 5px;
+			border-style: none;
+		}
+		#connect a:link,#navlist a:visited {
+			text-decoration: none;
+			opacity:0.6;
+			border-style: none;
+		}
+		#connect a:hover {
+			text-decoration: none;
+			opacity:0.8;
+			border-style: none;
+		}
+		#connect img {
+			border:none;
+			width:40px
+		}
+		span{
+			color:#333;
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="monogram">
+	<img src="initials.png" />
+</div>
+
+<div id="about">
+	<p id="title">Bryan Payne</p>
+	<p id="subtitle">Mountain View, California</p>
+
+	<p>I love computer security, leading teams of all sizes, and solving hard problems. Currently, I'm leading the Netflix Platform Security team.  We design, build, and operate critical security capabilities such as authN, authZ, PKI, HSM-based key management, and more for the Netflix Cloud Platform. <em>I'm hiring</em>, so if you have a passion for security and software engineering, please <a href="mailto:bdpayne+website@gmail.com">email me</a> or <a href="https://jobs.netflix.com/jobs/407">apply online</a>.</p>
+
+	<p>I've worked in computer security for my entire career.  Over the years I have worked on both offensive and defensive security projects for government, academia, and industry.  As a result, I can often bring unique perspectives to modern security issues.  I frequently speak at conferences about computer security, publish peer-reviewed security research, and contribute to open source software.</p>
+
+	<p>When I step away from the computer I enjoy bicycling, photography, anything outdoors, and spending time with my family.</p>
+</div>
+
+<ul id="connect">
+	<li><a href="https://twitter.com/bdpsecurity">
+		<img src="bio/twitter.svg" title="Tweets"></a></li>
+	<li><a href="https://speakerdeck.com/bdpayne">
+		<img src="bio/speakerdeck.svg" title="Presentations"></a></li>
+	<li><a href="https://www.linkedin.com/in/bdpayne">
+		<img src="bio/linkedin.svg" title="LinkedIn"></a></li>
+	<li><a href="https://github.com/bdpayne">
+		<img src="bio/github.svg" title="Code"></a></li>
+	<li><a href="https://www.researchgate.net/profile/Bryan_Payne2">
+			<img src="bio/researchgate.png" title="Publications"></a></li>
+	<li><a href="mailto:bdpayne+website@gmail.com">
+			<img src="bio/email.svg" title="Email"></a></li>
+</ul>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("background.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>
+</html>
