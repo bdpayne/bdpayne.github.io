@@ -21,6 +21,10 @@
 		@media (min-width: 767px) {
 			body {
 				background: #333 url("background.jpg") center center / cover fixed no-repeat;
+				background-image: image-set(
+					url("background.webp") type("image/webp"),
+					url("background.jpg") type("image/jpeg")
+				);
 				min-height: 100vh;
 			}
 		}
